@@ -1,0 +1,13 @@
+---
+- hosts: "{{ tower_hosts }}"
+  gather_facts: no
+
+  
+
+- name: ADD NEW USER
+  user:
+    name: "{{ linux_new_user }}"
+    shell: /bin/bash
+    groups: admin,developers
+    append: yes
+    
