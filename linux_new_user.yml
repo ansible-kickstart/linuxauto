@@ -1,6 +1,6 @@
 ---
 - hosts: "{{ tower_hosts }}"
-  gather_facts: no
+  gather_facts: yes
 
   
 
