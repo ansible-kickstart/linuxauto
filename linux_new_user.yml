@@ -2,6 +2,9 @@
 - hosts: "{{ tower_hosts }}"
   gather_facts: yes
 
+  vars:
+     tower_hosts: all
+
   
 
 - name: ADD NEW USER
